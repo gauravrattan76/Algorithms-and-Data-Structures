@@ -1,0 +1,27 @@
+Big O Notation Cheat Sheet-
+
+
+1. O(n)
+ex- accesing a specific item in an array or accessing the first item in linked list
+
+2. Log(n)
+
+Binary tree search
+
+3. O(n)
+
+for loop or accessing any element in linked list
+
+for(i = 0; i <n ; i++) here the loop will execute n times 
+
+4. nlog(n)
+
+Heap sort merge sort quick sort
+
+5. O(n^2)
+
+Loop inside loop ex insertion sort, selection sort
+
+6. O(n!)
+
+
