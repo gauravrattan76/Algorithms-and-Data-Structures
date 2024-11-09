@@ -1,7 +1,7 @@
 Big O Notation Cheat Sheet-
 
 
-1. O(n)
+1. O(1)
 ex- accesing a specific item in an array or accessing the first item in linked list
 
 2. Log(n)
