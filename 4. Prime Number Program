@@ -1,0 +1,17 @@
+function Prime(n)
+{
+  if(n <=1) return false;
+    if(n ===2) return true;
+    for(let i=2; i < n;i++)
+        {
+            if(n%i === 0) return false
+        }
+    return true
+}
+console.log(Prime(2))
+console.log(Prime(3))
+console.log(Prime(4))
+console.log(Prime(5))
+
+
+Time complexity - O(n)
