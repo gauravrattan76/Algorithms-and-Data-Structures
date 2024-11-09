@@ -1,0 +1,19 @@
+Algorithm to find fibonacci-
+
+
+function fibonncai(n)
+{
+    let a =[0,1]
+    for(let i =2; i<n;i++)
+        {
+            a[i] = a[i-1] + a[i-2]
+        }
+    return a;
+}
+
+console.log(fibonncai(3))
+console.log(fibonncai(4))
+console.log(fibonncai(5))
+
+
+Time complexity - O(n)
