@@ -1,0 +1,27 @@
+
+function search(a, n)
+{
+ let l = 0;
+ let r = a.length - 1;
+ while(l<=r){
+  let m = Math.floor((l+r)/2)
+  if(a[m] === n) return n;
+  if(a[m] > n)
+  {
+   r = m -1;
+  }
+  if(a[m] < n)
+  {
+   l = m + 1
+  }
+ }
+ return -1
+
+}
+
+
+let array = [2,3,4,5,6,7,8,9];
+console.log(search(array, 11))
+
+
+Complexty is O(Logn)
