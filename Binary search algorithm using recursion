@@ -1,6 +1,8 @@
 Binary search algorithm-
 _________________
 
+Binary search only works in a sorted array only.
+
 
 function search(a, l,r, n)
 {
