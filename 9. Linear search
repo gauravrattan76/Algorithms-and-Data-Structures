@@ -1,0 +1,14 @@
+function search(a,n)
+{
+ for(let i =0; i < a.length; i++)
+  {
+   if(a[i] === n) return n;
+  }
+return -1;
+}
+
+
+console.log(search([2,3,4,5,5,8],12))
+
+
+with linear search algorith the time complecty is O(n)
