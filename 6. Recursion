@@ -1,0 +1,12 @@
+Recursion-
+___________________________
+
+
+When a function calls itself
+
+It is used when a solution to a problem depends on solution to smaller instances of the same problem.
+
+When using recursion , always have a base case to break from the recursion
+
+
+Can solve a problem, but might not be the best way to solve a problem, time complexity can we really worse.
