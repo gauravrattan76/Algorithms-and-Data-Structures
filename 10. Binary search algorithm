@@ -1,0 +1,33 @@
+Binary search algorithm-
+_________________
+
+
+function search(a, l,r, n)
+{
+let mid = Math.floor((l+r)/2);
+if(a[mid] === n) return n;
+  if(l===r) return -1;
+ if(mid >n)
+ {
+  r = mid -1
+ }
+ if(mid <n)
+ {
+  l= mid + 1
+ }
+return search(a,l,r,n)
+}
+
+
+let array = [2,3,4,5,6,7,8,9];
+let l = 0;
+let r = array.length -1;
+console.log(search(array,l,r, 11))
+
+
+
+Time complexty is O(Logn) as we keep on splitting the array in halfs
+
+n/2, n/4, n/8 so we can say n/ 2^k = 1
+
+hence complexty os bindat search is O(Logn)
