@@ -1,0 +1,80 @@
+11. Quick sort algorithm -
+time complexity of O(n log n) on average, and a space complexity of O(log n)
+worst is On^2
+kind of better than merge sprt as merge sort 
+
+The space complexity of merge sort is O(n), and its time complexity is O(n log n): 
+
+import java.util.Arrays;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static int partition(int[] a ,int si,int li){
+        int pivot = a[li];
+        int i= si - 1;
+        for(int j = si; j < li; j++)
+        {
+           if(a[j] < pivot)
+           {
+               i++;
+               int tmp = a[i];
+               a[i] = a[j];
+               a[j] = tmp;
+           }
+        }
+        i++;
+        int temp = a[i];
+        a[i] = pivot;
+        a[li] = temp;
+        return i;
+    }
+
+    public static void quikSort(int[] arr ,int si,int li)
+    {
+        if(li > si)
+        {
+            int pidx = partition(arr, si, li);
+            quikSort(arr, 0, pidx-1);
+            quikSort(arr, pidx + 1, li);
+        }
+
+    }
+
+    public static void main(String[] args) {
+     int[] myArry = {34,23,12,8,32,6,2,99,1};
+      int si = 0;
+      int li = myArry.length - 1;
+      quikSort(myArry,si,li);
+      System.out.println(Arrays.toString(myArry));
+    }
+}
+
+
+
+
+____________________
+
+
+quick sort algorithm - 
+
+we choose pivot as the last element
+
+Time complexty - 
+
+worst - O(n^2) where as merege sort its woprst - nlogn
+
+aveareg case - o(nlogn)
+
+
+worst case - when the pivot is smallest elemt or largest element,
+
+
+when th array is already sorted in ascending order or descending order
+ so took n levl and plus we neded to run for loop
+
+array.sort uses quick sort algorthms
+
+
+space complxty is better than merge sprt as we dont ned array.
+
+_____________________________________________-
+
