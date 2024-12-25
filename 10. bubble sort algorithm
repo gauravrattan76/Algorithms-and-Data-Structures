@@ -1,0 +1,55 @@
+Java code-
+
+Key is to traverse one less than length  else we get index out of boubd as we check i+1;
+
+import java.util.Arrays;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+     int[] myArry = {34,23,12,99,3,8,1,4,44,2};
+     boolean swapped;
+     do{
+         swapped = false;
+         for(int i = 0; i < myArry.length-1 ; i++)
+         {
+             if(myArry[i+1] < myArry[i])
+             {
+                 int tmp = myArry[i + 1];
+                 myArry[i + 1] = myArry[i];
+                 myArry[i] = tmp;
+                 swapped = true;
+             }
+         }
+         System.out.println("iteration completed" + Arrays.toString(myArry));
+
+     }
+     while(swapped);
+     System.out.println(Arrays.toString(myArry));
+    }
+}
+
+__________________
+
+
+java script code -
+
+function bubbleSort(arr){
+    let flag;
+    do{
+        flag = false;
+        for(let i = 0; i < arr.length-1 ; i ++)
+        {
+            if(arr[i] > arr[i+1]){
+            let tmp = arr[i+ 1];
+            arr[i+1] = arr[i];
+            arr[i] = tmp;
+                flag = true;
+            }
+        }
+        
+    }
+    while(flag)
+    return arr;
+}
+
+console.log(bubbleSort([33,12,1, 4,5,6,4,2]));
