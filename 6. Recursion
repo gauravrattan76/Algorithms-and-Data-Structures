@@ -183,6 +183,37 @@ Fibonacci
 
 
 
+B is to power of A-
+
+
+class Main{
+
+    public  static int  power(int num, int pow)
+    {
+        if(pow == 0)
+        {
+            return 1;
+        }
+        int d = num * power(num, pow-1);
+   return d;
+    }
+
+    public  static void main(String[] args)
+    {
+      int sum= Main.power(3,4);
+      System.out.println(sum);
+    }
+}
+
+//power of 4 to the power 3
+
+
+
+
+
+
+
+
 
 
 
