@@ -10,3 +10,182 @@ When using recursion , always have a base case to break from the recursion
 
 
 Can solve a problem, but might not be the best way to solve a problem, time complexity can we really worse.
+
+
+Recursion-
+
+A function that call itself 
+
+
+Calling a function inside init self
+
+
+Arrays and graphs-
+
+
+f(x) = x^2;
+f(f(x))
+
+
+
+Print number from 1 to 5
+
+
+Most imp to identify a base case as when to exit recursion
+
+Always have a base case to break recursion and come out of the cycle
+
+
+
+
+
+
+
+
+class Main{
+
+    public static void printNum(int num)
+    {
+        if(num == 0)
+        {
+            return;
+        }
+        System.out.println(num);
+        printNum(num -1);
+
+    }
+
+    public  static void main(String[] args)
+    {
+       Main.printNum(5);
+        System.out.println("******");
+
+    }
+}
+
+
+
+_______. Sum of n natural numbers
+
+
+
+1 + 2 + 3 +4
+
+
+
+class Main{
+
+    public  static int  sum(int num)
+    {
+ // recursion base case
+        if(num == 0)
+        {
+            return 0;
+        }
+        int d =  num +  sum(num -1);
+        return d;
+    }
+
+    public  static void main(String[] args)
+    {
+      int sum= Main.sum(5);
+      System.out.println(sum);
+
+    }
+}
+
+
+Prime numbers -
+
+
+
+class Main{
+
+    public  static boolean  natural(int num)
+    {
+       for(int i = 2; i < num ; i++)
+        {
+            if(num % i == 0)
+            {
+                return false;
+            }
+        }
+       return true;
+    }
+
+    public  static void main(String[] args)
+    {
+      boolean sum= Main.natural(7);
+      System.out.println(sum);
+    }
+}
+
+
+
+3 * 2 * 1
+
+
+Factorial of number
+
+
+class Main{
+
+    public  static int  fact(int num)
+    {
+        if(num <= 1)
+        {
+            return 1;
+        }
+
+        int f = num * fact(num-1);
+        return f;
+    }
+
+    public  static void main(String[] args)
+    {
+      int sum= Main.fact(3);
+      System.out.println(sum);
+    }
+}
+
+
+
+
+
+In recursion always have a base case
+__________
+
+
+Fibonacci
+
+
+ class Main{
+
+    public  static int  fibonaci(int num)
+    {
+        if(num <= 1)
+        {
+            return 1;
+        }
+        int f = num + fibonaci(num-1);
+        return f;
+    }
+
+    public  static void main(String[] args)
+    {
+      int sum= Main.fibonaci(4);
+      System.out.println(sum);
+    }
+}
+
+// 0 1 2 3  4
+
+
+
+
+
+
+
+
+
+
