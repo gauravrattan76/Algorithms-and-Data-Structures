@@ -7,6 +7,10 @@ Pre order traversal-
 First got root, then root left sub tree then root right subtree
 
 
+its called pre order as rooot comes then left sub tree and then right sub tree
+
+Time complexty - 0(n) as we go to all nodes
+
 ___________________________
 
 
