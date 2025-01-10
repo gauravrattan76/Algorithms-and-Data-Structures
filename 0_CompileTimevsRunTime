@@ -1,0 +1,29 @@
+Compile time vs run time
+
+First for language like c++ 
+
+We take the source code and get into machine code, so a compiler converts source code to machine code and generates an executable
+
+This is compile time
+Compile time errors like syntax errors etc
+Adding number to string etc
+__________________________________
+
+Run time -
+
+
+Main function is executed here
+When the coupled code is run
+The compiled code or executable is loaded in the ram and then run on cpu
+Run time error-
+Erro can be logic error etc
+Exception handling - divide by 0 etc
+
+
+compiled language - c , c++, objective c
+interpreted language - javacsriopt, php
+
+
+hybrid labguage - c#, java 
+
+
