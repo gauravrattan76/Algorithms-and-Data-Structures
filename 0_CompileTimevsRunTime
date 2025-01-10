@@ -26,4 +26,160 @@ interpreted language - javacsriopt, php
 
 hybrid labguage - c#, java 
 
+_________________________
+
+
+Compiled language vs interpreting language
+‘
+
+
+Need to get our source code converted into machine code
+
+
+Interpreting source code
+
+
+We write source code , we have a compiler which converts source code into machine code.   Generates the executable eg.exe
+
+So in compiled language , we get the executable without seeing the source code
+
+Compiled language is faster, safer, code is ready to run
+
+Demerits - not cross platform
+
+__________________________________________
+
+In interpreted language - we give copy of source code
+
+Interpreter goes through the source code line by line and interpret the code
+Javascript is interpreted language
+
+Javascript is sent on the web long with html, css and web browser interprets the javascript to run the code
+
+
+Sent over the web
+
+
+Sent as source code and web browser interprets javascript
+
+Cross platform, simpler, easier to debug
+
+
+Demerit - 
+Interpreter required
+
+
+Often slower
+
+Source code is public
+
+
+__________________________
+
+
+3rd approach is we have intermediate language - Jit compiler
+
+In hybrid mode - we compiled the code to intermediate code, which is as close to machine code and also making it to working with cross platform
+
+
+Source code —— il code (byte code)—— interprets the byte code to machine code(just in time compiler)
+
+___________________________
+
+Compiled language - c , c++ , objective c - max speed
+
+Interpreted - javascript , php - more platform
+‘
+
+Intermediate hybrid approach - c#, java, vb net, python
+
+Hybriid converts source code into intermediate code and then sends to receiver , called Jit , just in time compiler
+
+
+__________________
+
+
+Google chrome uses - The interpreter used by Google Chrome is called V8. It is a JavaScript engine developed by Google specifically for Chrome, allowing it to execute JavaScript code efficiently. 
+
+
+Compiled language vs interpreting language
+‘
+
+
+Need to get our source code converted into machine code
+
+
+Interpreting source code
+
+
+We write source code , we have a compiler which converts source code into machine code.   Generates the executable eg.exe
+
+So in compiled language , we get the executable without seeing the source code
+
+Compiled language is faster, safer, code is ready to run
+
+Demerits - not cross platform
+
+__________________________________________
+
+In interpreted language - we give copy of source code
+
+Interpreter goes through the source code line by line and interpret the code
+Javascript is interpreted language
+
+Javascript is sent on the web long with html, css and web browser interprets the javascript to run the code
+
+
+Sent over the web
+
+
+Sent as source code and web browser interprets javascript
+
+Cross platform, simpler, easier to debug
+
+
+Demerit - 
+Interpreter required
+
+
+Often slower
+
+Source code is public
+
+
+__________________________
+
+
+3rd approach is we have intermediate language - Jit compiler
+
+In hybrid mode - we compiled the code to intermediate code, which is as close to machine code and also making it to working with cross platform
+
+
+Source code —— il code (byte code)—— interprets the byte code to machine code(just in time compiler)
+
+___________________________
+
+Compiled language - c , c++ , objective c - max speed
+
+Interpreted - javascript , php - more platform
+‘
+
+Intermediate hybrid approach - c#, java, vb net, python
+
+Hybriid converts source code into intermediate code and then sends to receiver , called Jit , just in time compiler
+
+
+__________________
+
+
+Google chrome uses - The interpreter used by Google Chrome is called V8. It is a JavaScript engine developed by Google specifically for Chrome, allowing it to execute JavaScript code efficiently. 
+
+
+
+Stack vs Heap memory in java
+
+Stack vs Heap memory in java
+
+
+
 
