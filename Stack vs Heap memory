@@ -1,0 +1,86 @@
+Stack Memory
+
+
+Can directly access stacks memory
+
+Static in nature
+
+
+Fixed size is allocated
+
+The allocation happens on contiguous blocks of memory. We call it a stack memory allocation because the allocation happens in the function call stack. The size of memory to be allocated is known to the compiler and whenever a function is called, its variables get memory allocated on the stack. And whenever the function call is over, the memory for the variables is de-allocated. This all happens using some predefined routines in the compiler. A programmer does not have to worry about memory allocation and de-allocation of stack variables. This kind of memory allocation is also known as Temporary memory allocation because as soon as the method finishes its execution all the data belonging to that method flushes out from the stack automatically. This means any value stored in the stack memory scheme is accessible as long as the method hasn’t completed its execution and is currently in a running state.
+
+Key Points:
+
+It’s a temporary memory allocation scheme where the data members are accessible only if the method( ) that contained them is currently running.
+It allocates or de-allocates the memory automatically as soon as the corresponding method completes its execution.
+We receive the corresponding error Java. lang. StackOverFlowError by JVM, If the stack memory is filled completely.
+Stack memory allocation is considered safer as compared to heap memory allocation because the data stored can only be accessed by the owner thread.
+Memory allocation and de-allocation are faster as compared to Heap-memory allocation.
+Stack memory has less storage space as compared to Heap-memory.
+
+_____________________________________________________
+
+Heap memory
+
+Can bee accessed via pointer
+
+
+Dynamic in nature
+
+We receive the corresponding error message if Heap-space is entirely full,  java. lang.OutOfMemoryError by JVM.
+This memory allocation scheme is different from the Stack-space allocation, here no automatic de-allocation feature is provided. We need to use a Garbage collector to remove the old unused objects in order to use the memory efficiently.
+The processing time(Accessing time) of this memory is quite slow as compared to Stack-memory.
+Heap memory is also not as threaded-safe as Stack-memory because data stored in Heap-memory are visible to all threads.
+The size of the Heap-memory is quite larger as compared to the Stack-memory.
+Heap memory is accessible or exists as long as the whole application(or java program) runs.
+
+
+
+_____________________________
+
+Execution code-
+
+
+class Emp {
+    int id;
+    String emp_name;
+
+    public Emp(int id, String emp_name) {
+        this.id = id;
+        this.emp_name = emp_name;
+    }
+}
+
+public class Emp_detail {
+    private static Emp Emp_detail(int id, String emp_name) {
+        return new Emp(id, emp_name);
+    }
+
+    public static void main(String[] args) {
+        int id = 21;
+        String name = "Maddy";
+        Emp person_ = null;
+        person_ = Emp_detail(id, name);
+    }
+}
+
+
+1.As we start execution of the have program, all the run-time classes are stored in the Heap-memory space.
+2.Then we find the main() method in the next line which is stored in the stack along with all its primitive(or local) and the reference variable Emp of type Emp_detail will also be stored in the Stack and will point out to the corresponding object stored in Heap memory.
+
+
+Parameter	STACK	HEAP
+Basic	Memory is allocated in a contiguous block.	Memory is allocated in any random order.
+Allocation and De-allocation	Automatic by compiler instructions.	Manual by the programmer.
+Cost	Less	More
+Implementation	Easy	Hard
+Access time	Faster	Slower
+Main Issue	Shortage of memory	Memory fragmentation
+Locality of reference	Excellent	Adequate
+Safety	Thread safe, data stored can only be accessed by the owner	Not Thread safe, data stored visible to all threads
+Flexibility	Fixed-size	Resizing is possible
+Data type structure	Linear	Hierarchical
+Preferred	Static memory allocation is preferred in an array.	Heap memory allocation is preferred in the linked list.
+Size	Smaller than heap memory.	Larger than stack memory.
+
