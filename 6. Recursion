@@ -1,7 +1,6 @@
 Recursion-
 ___________________________
 
-
 When a function calls itself
 
 It is used when a solution to a problem depends on solution to smaller instances of the same problem.
@@ -10,6 +9,65 @@ When using recursion , always have a base case to break from the recursion
 
 
 Can solve a problem, but might not be the best way to solve a problem, time complexity can we really worse.
+_____________________________________________
+
+Head first Recursion vs Tail first recursion
+
+Tail Recursion-
+____________
+
+If the recursive call occurs at the end of a method, it is called a tail recursion. The tail recursion is similar to a loop. The method executes all the statements before jumping into the next recursive call.
+
+
+Tail first recursion-
+____________________________
+
+public class Main {
+    static void print(int n){
+        if(n==0)
+        {
+            return;
+        }
+    
+        System.out.println(n);
+        print(n-1);
+    }
+    public static void main(String[] args) {
+        int n = 4;
+        Main.print(4);
+        }
+}
+
+
+Similar to for loop , executes statement and then decrements - 4, 3,2 ,2,1
+
+__________________________________________________________________
+
+
+If the recursive call occurs at the beginning of a method, it is called a head recursion. The method saves the state before jumping into the next recursive call.
+
+Head first-
+_________
+
+public class Main {
+    static void print(int n){
+        if(n==0)
+        {
+            return;
+        }
+        print(n-1);
+        System.out.println(n);
+    }
+    public static void main(String[] args) {
+        int n = 4;
+        Main.print(4);
+        }
+}
+
+
+
+It will be  1,2 ,3 4
+
 
 
 Recursion-
