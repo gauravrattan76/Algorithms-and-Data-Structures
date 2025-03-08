@@ -1,0 +1,45 @@
+DFS Vs BFS trees -
+________________________
+
+
+
+Depth-First Search (DFS) is a tree traversal algorithm that explores a path as deep as possible before backtracking. It follows a LIFO (Last In, First Out) strategy using recursion or an explicit stack.
+
+DFS can be performed in three different orders:
+1. Pre-Order (Root → Left → Right)
+2. In-Order (Left → Root → Right) (mostly used in BSTs to get sorted order)
+3. Post-Order (Left → Right → Root) (useful for deleting a tree)
+
+
+
+
+_________________________
+
+2. Breadth-First Search (BFS) - Level Order Traversal
+Breadth-First Search (BFS), also called Level Order Traversal, explores all nodes at the current level before moving to the next level. It follows a FIFO (First In, First Out) strategy using a queue.
+
+
+Key Differences Between DFS and BFS
+Feature	DFS (Depth-First Search)
+
+Traversal Order	Goes deep before backtracking	
+Data Structure	Uses Stack (recursively or explicitly)
+Memory Usage	Uses less memory (O(h) for recursion, O(n) for stack in worst case)
+Time Complexity	O(n)
+Best Use Case	Useful for pathfinding in deep trees, expression trees, or backtracking algorithms
+Example Applications	Maze-solving, Topological Sorting, Tree traversals (In-Order, Pre-Order, Post-Order)
+
+BFS (Breadth-First Search)
+
+Uses Queue
+Explores all nodes at the current level before moving to the next level
+	Uses more memory (O(n) for storing all nodes at a level)
+Time Complexity	O(n)	
+Useful for finding the shortest path in an unweighted tree/graph
+	Shortest path in trees, AI (like GPS, Chess moves), Network broadcasting
+
+
+
+Use DFS when you need to explore deep paths or when memory is a concern.
+Use BFS when you need to find the shortest path or explore all nodes at a level first.
+
