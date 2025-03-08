@@ -1,0 +1,70 @@
+Level order traversal -
+———————————————
+
+
+use queue
+
+queue.add
+
+queue.poll
+
+
+import java.util.*;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+
+    static class Node {
+        int data;
+        Node left;
+        Node right;
+
+        public Node(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    // here its dynamic logic to create the tree
+    static class BinaryTree{
+        static int idx = -1;
+
+        public static Node returnTree(int[] nodes)
+        {
+            idx++;
+            if(nodes[idx] == -1) return null;
+            Node mynode = new Node(nodes[idx]);
+            mynode.left = returnTree(nodes);
+            mynode.right = returnTree(nodes);
+            return mynode;
+        }
+
+       static void levelOrder(Node root)
+       {
+           Queue<Node> q= new LinkedList<Node>();
+           q.add(root);
+
+           while(!q.isEmpty())
+           {
+               Node node = q.poll();
+               System.out.println(node.data);
+
+               if(node.left != null) q.add(node.left);
+               if(node.right != null) q.add(node.right);
+           }        
+       }
+
+
+    }
+
+    public static void main(String[] args) {
+        int[] nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+        BinaryTree bt = new BinaryTree();
+      Node root =   BinaryTree.returnTree(nodes);
+      BinaryTree.levelOrder(root);
+
+    }
+}
+
