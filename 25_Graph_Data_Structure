@@ -1,0 +1,68 @@
+Graphs Data Structure-
+________________________________
+
+Node/ Vertex -
+
+Is the node for that graph.
+We also call it edge 
+UniDirectional Graph-
+
+
+V1   ……> v2
+
+Bidirectional graphs
+To and from between x and y
+_____________________________________
+
+Weight graphs-
+
+A >>>>>.b.  there is a weight of 10
+
+Weighted graph will have some weights
+___________________________________
+
+Un weighted graph doesn’t have any weights
+
+
+We will have undirected and lighted graph
+
+
+We can also have directed and unweighted graph
+
+__________________________________
+
+Adjacency list graphs-
+
+
+List of lists
+
+Array of array list
+
+
+Array size is equal to number of vertex
+
+
+And on each index item we will create list on each item index
+
+So graph is an array of array list
+
+
+We can say 
+
+
+Arraylist<Edge> graph[vertx]
+
+
+So each element in array consists of array list
+
+
+Array list.add(new Edge(sec, des))
+
+
+Class Edge{
+Int src;
+Int des;
+}
+
+
+
