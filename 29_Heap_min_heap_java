@@ -1,0 +1,111 @@
+Heap Data Structure-
+______________________________
+
+
+Heap data structure is a complete binary tree that satisfies the heaps property
+
+Binary tree is a tree where each tree node has atmost 2 children
+
+
+
+
+Complete binary tree - each node has 2 children
+
+Left portion should have 2 children
+
+
+All levels are completely filled, except possibly the last level.
+The last level has all nodes as left as possible, meaning nodes are filled from left to right without any gaps.
+
+Heaps are of 2 types
+
+
+Max heaps /mean hip
+
+
+
+Max heap
+
+- Children will always be smaller than the parent
+
+Main heap -
+
+
+- Children will always be bigger than parent
+
+________________________________
+
+If nodes are n height of heap is long as its a complete binary tree as it splits in to two …..required is left one for sure
+
+
+_______________________________________
+
+
+
+If we want to go to parent of node - I/2 and floor value. 3/2 - 1 is the parent
+
+Left child - 2* I -
+
+
+Right child - 2*I + 1
+_____________________________—
+
+
+
+Find the top 4th element in an array -
+
+
+import java.util.*;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static int topEl(int[] nums, int k)
+    {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for(int n : nums)
+        {
+            pq.offer(n);
+            if(pq.size() > k)
+            {
+                pq.poll();
+            }
+        }
+        return pq.peek();
+
+    }
+
+    public static void main(String[] args) {
+       int[] nums ={5,4,3,2,1};
+       int k = 3;
+//       int[] val = topEl(nums, k);
+       int r =  topEl(nums, k);
+       System.out.println("largest val is" + r);
+    }
+}
+
+
+Time Complexity:
+O
+(
+n
+log
+⁡
+k
+)
+O(n \log k)
+O(nlogk) (each insertion/removal in the heap is
+O
+(
+log
+⁡
+k
+)
+O(\log k)
+O(logk))
+
+
+
+Space. Complete is 0k
+
